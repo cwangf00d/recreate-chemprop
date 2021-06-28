@@ -440,7 +440,7 @@ class BatchMolGraph:
         self.b2b = None # try to avoid computing b2b b/c O(n_atoms^3)
         self.a2a = None # only needed if using atom messages
 
-    def get_components(self, atom_messages: bool = False) -> Tuple[torch.FloatTensor, torch.FloatTesnor, torch.LongTensor,
+    def get_components(self, atom_messages: bool = False) -> Tuple[torch.FloatTensor, torch.FloatTensor, torch.LongTensor,
                                                                     torch.LongTensor, torch.LongTensor, List[Tuple[int, int]], List[Tuple[int, int]]]:
         """
         Returns the components of the :class:`BatchMolGraph`
